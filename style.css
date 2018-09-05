@@ -42,3 +42,8 @@ a {
 ul {
     background-color: #dddddd;
 }
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
