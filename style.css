@@ -55,3 +55,9 @@ footer {
     background-color: #aa3311;
     color: white;
 }
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
