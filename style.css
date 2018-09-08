@@ -25,7 +25,7 @@ footer {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #808080;
     overflow: hidden;
 }
 
@@ -41,12 +41,12 @@ footer {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #b3d1ff;
     color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #4d94ff;
     color: white;
 }
