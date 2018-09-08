@@ -14,12 +14,13 @@ h1 {
 h2 {
 	color: #404040;
 	text-align: left;
+	font-size:18;
 }
 
 p {
 	color: #808080
 	align: left;
-	font-size:12px;
+	font-size:14px;
 }
 
 footer {
