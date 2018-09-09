@@ -37,7 +37,7 @@ div {
 }
 
 /* Add a black background color to the top navigation */
-.topnav {
+/*.topnav {
     background-color: #404040;
     overflow: hidden;
 }
