@@ -50,7 +50,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #404040;
+    background-color: white;
     top: 0;
     padding-top:20px;
 }
@@ -61,15 +61,15 @@ li {
 
 li a {
     display: block;
-    color: #f2f2f2;
+    color: #404040;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #f2f2f2;
-    color: #427dd7;
+    background-color: #427dd7;
+    color: #f2f2f2;
 } 
 
 .sticky {
