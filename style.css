@@ -8,48 +8,6 @@ body {
 	margin-left: 120px;
 }
 
-#nav {
-    	padding-right:0;
-  	width: 100%; 
-  	margin-left:0;
-  	margin-right:0;  
-	position: fixed;
-	z-index: 10;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    top: 0;
-    padding-top:20px;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: #FF6347;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #FF6347;
-    color: white;
-} 
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 h1 {
 	color: #404040;
 	text-align: center;
@@ -79,13 +37,13 @@ div {
 }
 
 /* Add a black background color to the top navigation */
-/*.topnav {
+.topnav {
     background-color: #404040;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-/*.topnav a {
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -95,13 +53,13 @@ div {
 }
 
 /* Change the color of links on hover */
-/*.topnav a:hover {
+.topnav a:hover {
     background-color: #f2f2f2;
     color: black;
 }
 
 /* Add a color to the active/current link */
-/*.topnav a.active {
+.topnav a.active {
     background-color: #427dd7;
     color: white;
 }
