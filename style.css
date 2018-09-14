@@ -4,26 +4,28 @@ body {
 	text-align:left;
 	font-family:"Gravity", sans-serif;
 	font-size:20px;
-	margin-right: 100px;
-	margin-left: 120px;
 }
 
 h1 {
 	color: #404040;
 	text-align: center;
+    margin-right: 100px;
+    margin-left: 120px;
 }
 
 h2 {
 	color: #404040;
-	{position:absolute; left:100px; right:100px width:100%;};
 	text-align: left;
 	font-size:18;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 p {
 	color: #808080
-	align: left;
 	font-size:14px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 footer {
@@ -35,6 +37,13 @@ footer {
 
 div {
     padding-right: 30px;
+}
+
+.center {
+    display: block;
+    margin-left: 100px
+    margin-right: 100px;
+    width: 50%;
 }
 
 #nav {

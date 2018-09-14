@@ -37,7 +37,6 @@
         border: 1px solid rgba(0,0,0,0.4);
         font-family: 'Gravity', sans-serif;
     }
-
     #menu a {
         font-size: 13px;
         color: #404040;
@@ -49,21 +48,17 @@
         border-bottom: 1px solid rgba(0,0,0,0.25);
         text-align: center;
     }
-
     #menu a:last-child {
         border: none;
     }
-
     #menu a:hover {
         background-color: #f8f8f8;
         color: #404040;
     }
-
     #menu a.active {
         background-color: #6d6d6d;
         color: #ffffff;
     }
-
     #menu a.active:hover {
         background: #a0a0a0;
     }
@@ -83,34 +78,32 @@ var map = new mapboxgl.Map({
     zoom: 9 // starting zoom
 });
 map.on('load', function() {
-
     map.addLayer({
         "id": "data",
         "type": "fill-extrusion",
         "source": {
-        	'type': 'geojson',
-        	'data': data
+            'type': 'geojson',
+            'data': data
         },
            'paint': {
                 'fill-extrusion-color' : {
                     'property': 'bachdeg',
                     "stops":[
-                    	[0, 'white'],
-                    	[1, '#427dd7']
+                        [0, 'white'],
+                        [1, '#427dd7']
                     ]
                     
                 },
                 'fill-extrusion-height' : {
                     'property': 'bachdeg',
                     "stops":[
-                    	[0.2, 0],
-                    	[1, 10000]
+                        [0.2, 0],
+                        [1, 10000]
                     ]
                 },
                  'fill-extrusion-opacity': 0.6
             }
     });
-
         map.addLayer({
         "id": "data2",
         "type": "fill-extrusion",
@@ -138,11 +131,9 @@ map.on('load', function() {
             }
     });
 });
-
 //LIST OF LayerIDs and Display Text
 var toggleableLayerIds = ['data', 'data2'];
 var toggleableLayerText = ['Education', 'Income'];
-
 //TOGGLE
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
@@ -152,14 +143,11 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
     link.className = 'active';
     link.textContent = idText;
     link.textId = id;
-
     link.onclick = function (e) {
         var clickedLayer = this.textId;
         e.preventDefault();
         e.stopPropagation();
-
         var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
-
         if (visibility === 'visible') {
             map.setLayoutProperty(clickedLayer, 'visibility', 'none');
             this.className = '';
@@ -168,7 +156,6 @@ for (var i = 0; i < toggleableLayerIds.length; i++) {
             map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
         }
     };
-
     var layers = document.getElementById('menu');
     layers.appendChild(link);
 }
