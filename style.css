@@ -15,6 +15,7 @@ h1 {
 
 h2 {
 	color: #404040;
+	{position:absolute; left:100px; right:100px width:100%;};
 	text-align: left;
 	font-size:18;
 }
