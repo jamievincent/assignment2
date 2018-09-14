@@ -60,7 +60,8 @@
 
     
 <body>
-
+<nav id="menu></nav>
+             
 <div id='map'></div>
 <div id='map2'></div>
     
@@ -97,21 +98,10 @@ map.on('load', function() {
                     [1, 10000]                    
                 ]                
             },                 
-            'fill-extrusion-opacity': 1            
-        }    
-    }); 
-});
-    
-var maptwo = new mapboxgl.Map({
-    container: 'map2',
-    style: 'mapbox://styles/mapbox/light-v9',
-    center: [151.004105, -33.813002],
-    zoom: 9,
-    pitch: 45, 
-    bearing: -17.6
-});
-maptwo.on('load', function() {
-    maptwo.addLayer({
+            'fill-extrusion-opacity': 0.6           
+        } 
+      
+      map.addLayer({
         "id": "data2",
         "type": "fill-extrusion",        
         "source": {        
@@ -133,10 +123,11 @@ maptwo.on('load', function() {
                     [1, 10000]                    
                 ]                
             },                 
-            'fill-extrusion-opacity': 1            
-        }    
+            'fill-extrusion-opacity': 0.6          
+        } 
     }); 
 });
+    
 </script>
 
 </body>
