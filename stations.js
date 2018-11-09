@@ -1,0 +1,1 @@
+station ={"type":"FeatureCollection","features":[{"type":"Feature","geometry":{ "type": "Polygon","coordinates": [[[151.28265,-33.7898775],[151.28684,-33.7904125],[151.28595,-33.7973975],[151.28175,-33.7968625],[151.28265,-33.7898775]]]},"properties":{"height":979.175312,"base_height":0,"colour":"#000000"}}]}
